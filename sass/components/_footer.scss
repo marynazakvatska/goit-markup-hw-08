@@ -1,0 +1,107 @@
+.footer {
+  display: block;
+  background-color: $color-hero-footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &-address.container {
+    @media screen and (min-width: 480px) {
+      display: block;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}
+
+.logo-studio.address {
+  color: $color-clear-text;
+  font-style: normal;
+  margin-bottom: 0px;
+}
+
+.address-text {
+  display: block;
+  color: $color-clear-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-primary;
+  line-height: 1.71;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.address-contacts {
+  font-weight: 400;
+  font-size: $font-primary;
+  line-height: 1.71;
+  color: $color-address-contacts;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-meta {
+  width: max-content;
+  margin-right: 83px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+
+.div-address {
+  @media screen and (min-width: 480px) {
+    margin: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding-left: 76px;
+    padding-right: 165px;
+    margin: 0;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.joing {
+  @media screen and (min-width: 480px) {
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+    width: min-content;
+    align-items: left;
+  }
+}

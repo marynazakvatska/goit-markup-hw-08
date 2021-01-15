@@ -1,0 +1,83 @@
+.work-title,
+.team-title,
+.our-clients-title {
+  color: $color-title-text;
+  line-height: 1.17;
+  font-weight: 700;
+  margin-top: 0px;
+
+  text-align: center;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: $team-title;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: $font-section;
+    margin-bottom: 50px;
+  }
+}
+
+.team {
+  background-color: $color-team-background;
+  &-list {
+    text-align: center;
+    @media screen and (min-width: 480px) {
+      display: block;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &-element {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: inline-block;
+      width: calc((100% - 1 * 30px) / 1);
+      margin: 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+  &-name {
+    color: $color-title-text;
+    font-weight: 500;
+    font-size: $font-medium;
+    line-height: 1.19;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+}
+.team {
+  &-profession {
+    color: $color-primary-text;
+    font-size: $font-medium;
+    line-height: 1.19;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.team-img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
