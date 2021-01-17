@@ -17,7 +17,7 @@
     text-align: center;
   }
   @media screen and (min-width: 768px) {
-    margin-right: auto;
+    margin: auto;
     text-align: center;
     margin-top: 60px;
   }
@@ -139,7 +139,7 @@
 }
 
 .invitation {
-  display: block;
+  display: inline-block;
   font-weight: 700;
   font-size: $font-primary;
   line-height: 1.14;
@@ -147,7 +147,7 @@
   text-transform: uppercase;
   color: $color-clear-text;
   margin-bottom: 20px;
-  padding-top: 4px;
+  /*padding-top: 4px;*/
 }
 
 .social.invit {
@@ -163,7 +163,8 @@
 .icon-social-link.invit {
   background-color: rgba(255, 255, 255, 0.1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-accent;
   }
 }

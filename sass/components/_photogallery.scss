@@ -38,15 +38,16 @@
 }
 
 .link-img {
-  display: inline-block;
+  display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-element:hover {
+.link-img:hover,
+.link-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
-  .overlay-text,
-  .overlay-text {
+  & .overlay-text {
     display: block;
     transform: translateY(0%);
     opacity: 1;
@@ -134,6 +135,12 @@
 
 .text-distance {
   padding: 20px 24px;
+}
+
+.flex-element:first-child .text-distance {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 
 .button {

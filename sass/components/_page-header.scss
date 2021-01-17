@@ -133,7 +133,6 @@ body {
   &:hover,
   &:focus {
     color: $color-accent;
-    outline: none;
   }
   &.current {
     color: $color-accent-text;
@@ -184,6 +183,7 @@ body {
   .link:hover,
   .link:focus {
     color: $color-accent;
+    fill: $color-accent;
   }
 }
 

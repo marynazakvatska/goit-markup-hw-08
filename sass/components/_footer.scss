@@ -22,9 +22,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: baseline;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
+      align-items: baseline;
     }
   }
 }
@@ -100,8 +102,8 @@
   @media screen and (min-width: 1200px) {
     display: block;
     margin: 0;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     width: min-content;
-    align-items: left;
+    text-align: left;
   }
 }
