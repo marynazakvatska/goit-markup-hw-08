@@ -1598,7 +1598,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .subscribe-footer {
-    margin: auto;
+    display: inline-block;
     text-align: center;
     margin-top: 60px;
   }
@@ -1607,7 +1607,7 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe-footer {
     margin-left: 93px;
-    margin-top: 12px;
+    margin-top: 9px;
     text-align: left;
   }
 }
